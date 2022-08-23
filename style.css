@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%); /*linear = vem de alguma angulação; gradient = degradê */
+
+  display: grid;
+  place-items: center; /* essa é desbloqueada com a função grid, assim como só temos uma item no body, conseguimos colocar esse item no centro da página */
+  height: 100vh; /* aumentamos a altura para alinhar a caixa no meio */
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button {
+  background-color: #7879F1;
+  color: #fff;
+  
+  border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+  
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: #5050b3;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1); /*primeiro começando pelo eixo x que tem o valor de 0; eixo y, que determina que a luz está pegando de cima para baixo; por ultimo o blur, que deixa a sombra embaçada */
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%); /* pegue a largura minima do primeiro valor, se ficar menor... então peguei apenas 90% */
+
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+/* screen1 */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  
+}
+
+h1, p {
+  color: #34355B;
+}
+
+p {
+  font-size: 1.6rem;
+  opacity: .8rem;
+}
+
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+  font-weight: bold;
+}
+
+input {
+  background-color: #DCE2E9;
+  width: 6rem;
+  
+  border-radius: .4rem 0 0 .4rem;
+}
+
+/* screen2 */
+
+h2 {
+  color: #34355B;
+  font-weight: normal;
+  font-size: 2.4rem;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}
+
